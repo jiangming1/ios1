@@ -25,6 +25,10 @@
 		04ADF1431B08DF840061CE77 /* TouZi.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04ADF1411B08DF840061CE77 /* TouZi.xib */; };
 		04ADF14B1B08E5C00061CE77 /* LeveyTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 04ADF1481B08E5C00061CE77 /* LeveyTabBar.m */; };
 		04ADF14C1B08E5C00061CE77 /* LeveyTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04ADF14A1B08E5C00061CE77 /* LeveyTabBarController.m */; };
+		185C824F1B219987007F026C /* 0@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 185C824E1B219987007F026C /* 0@2x.png */; };
+		185C82511B219A6E007F026C /* 0c826808a3ba.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 185C82501B219A6E007F026C /* 0c826808a3ba.jpg */; };
+		185C82551B21A02E007F026C /* shouye.m in Sources */ = {isa = PBXBuildFile; fileRef = 185C82531B21A02E007F026C /* shouye.m */; };
+		185C82561B21A02E007F026C /* shouye.xib in Resources */ = {isa = PBXBuildFile; fileRef = 185C82541B21A02E007F026C /* shouye.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +68,11 @@
 		04ADF1481B08E5C00061CE77 /* LeveyTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeveyTabBar.m; sourceTree = "<group>"; };
 		04ADF1491B08E5C00061CE77 /* LeveyTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeveyTabBarController.h; sourceTree = "<group>"; };
 		04ADF14A1B08E5C00061CE77 /* LeveyTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeveyTabBarController.m; sourceTree = "<group>"; };
+		185C824E1B219987007F026C /* 0@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "0@2x.png"; sourceTree = "<group>"; };
+		185C82501B219A6E007F026C /* 0c826808a3ba.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 0c826808a3ba.jpg; sourceTree = "<group>"; };
+		185C82521B21A02E007F026C /* shouye.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = shouye.h; sourceTree = "<group>"; };
+		185C82531B21A02E007F026C /* shouye.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = shouye.m; sourceTree = "<group>"; };
+		185C82541B21A02E007F026C /* shouye.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = shouye.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,11 +102,15 @@
 		04ADF0F61B08D8D50061CE77 = {
 			isa = PBXGroup;
 			children = (
+				185C824D1B21993C007F026C /* img */,
 				04ADF1471B08E5C00061CE77 /* LeveyTabBar.h */,
 				04ADF1481B08E5C00061CE77 /* LeveyTabBar.m */,
 				04ADF1491B08E5C00061CE77 /* LeveyTabBarController.h */,
 				04ADF14A1B08E5C00061CE77 /* LeveyTabBarController.m */,
 				04ADF13F1B08DF840061CE77 /* TouZi.h */,
+				185C82521B21A02E007F026C /* shouye.h */,
+				185C82531B21A02E007F026C /* shouye.m */,
+				185C82541B21A02E007F026C /* shouye.xib */,
 				04ADF1401B08DF840061CE77 /* TouZi.m */,
 				04ADF1411B08DF840061CE77 /* TouZi.xib */,
 				04ADF1371B08D9A20061CE77 /* GuanYu.h */,
@@ -168,6 +181,15 @@
 				04ADF1241B08D8D50061CE77 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		185C824D1B21993C007F026C /* img */ = {
+			isa = PBXGroup;
+			children = (
+				185C82501B219A6E007F026C /* 0c826808a3ba.jpg */,
+				185C824E1B219987007F026C /* 0@2x.png */,
+			);
+			name = img;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -245,7 +267,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				185C824F1B219987007F026C /* 0@2x.png in Resources */,
 				04ADF10D1B08D8D50061CE77 /* InfoPlist.strings in Resources */,
+				185C82561B21A02E007F026C /* shouye.xib in Resources */,
+				185C82511B219A6E007F026C /* 0c826808a3ba.jpg in Resources */,
 				04ADF1431B08DF840061CE77 /* TouZi.xib in Resources */,
 				04ADF1151B08D8D50061CE77 /* Images.xcassets in Resources */,
 				04ADF13B1B08D9A20061CE77 /* GuanYu.xib in Resources */,
@@ -271,6 +296,7 @@
 				04ADF14B1B08E5C00061CE77 /* LeveyTabBar.m in Sources */,
 				04ADF1421B08DF840061CE77 /* TouZi.m in Sources */,
 				04ADF14C1B08E5C00061CE77 /* LeveyTabBarController.m in Sources */,
+				185C82551B21A02E007F026C /* shouye.m in Sources */,
 				04ADF13A1B08D9A20061CE77 /* GuanYu.m in Sources */,
 				04ADF10F1B08D8D50061CE77 /* main.m in Sources */,
 			);
@@ -471,6 +497,7 @@
 				04ADF12D1B08D8D50061CE77 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		04ADF12E1B08D8D50061CE77 /* Build configuration list for PBXNativeTarget "test0512Tests" */ = {
 			isa = XCConfigurationList;
@@ -479,6 +506,7 @@
 				04ADF1301B08D8D50061CE77 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

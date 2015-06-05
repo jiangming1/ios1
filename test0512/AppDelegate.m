@@ -8,23 +8,40 @@
 
 #import "AppDelegate.h"
 #import "GuanYu.h"
+#import "touZi.h"
+#import "shouye.h"
 #import "LeveyTabBarController.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-        GuanYu *gy = [[GuanYu alloc]init];
+    //main *gy = [[main alloc]init];
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
-    [self.window makeKeyAndVisible];
+    UITabBarController *tabBarController = [[UITabBarController alloc] init];
+    shouye  *shouye1 = [[shouye alloc] init];
+//    [tabBarController addChildViewController:shouye1];
+    tabBarController.tabBar.selectedImageTintColor = [UIColor redColor];
+    shouye1.tabBarItem.title = @"首页";
+    shouye1.tabBarItem.image = [[UIImage imageNamed:@"0"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     
-
-    //    UINavigationController *gy = [[UINavigationController alloc]init];
-    UINavigationController *gy1 = [[UINavigationController alloc]initWithRootViewController:gy];
-    gy1.navigationBarHidden = YES;
-    self.window.rootViewController = gy1;
+    TouZi *touzi = [[TouZi alloc] init];
+//    [tabBarController addChildViewController:touzi];
+    touzi.tabBarItem.title = @"理财产品";
+    touzi.tabBarItem.image = [UIImage imageNamed:@"success.png"];
+    GuanYu  *guanyu1 = [[GuanYu alloc] init];
+    [tabBarController addChildViewController:guanyu1];
+    tabBarController.tabBar.selectedImageTintColor = [UIColor redColor];
+    guanyu1.tabBarItem.title = @"钱包";
+    guanyu1.tabBarItem.image = [[UIImage imageNamed:@"0"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    
+    TouZi *touzi1 = [[TouZi alloc] init];
+//    [tabBarController addChildViewController:touzi1];
+    touzi1.tabBarItem.title = @"更多";
+    touzi1.tabBarItem.image = [UIImage imageNamed:@"success.png"];
+    tabBarController.viewControllers = @[shouye1,touzi,touzi1];
+    self.window.rootViewController = tabBarController;
+    [self.window makeKeyAndVisible];
     return YES;
 }
 
